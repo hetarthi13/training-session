@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Table from './Table';
 
 // function Content(props) {
 
@@ -22,11 +23,15 @@ export default class Content extends Component {
             message: 'Welcome, Jay',
             counter: 0
         };
+
+        this.incrementCounter = this.incrementCounter.bind(this)
+        this.changeMessage = this.changeMessage.bind(this)
     }
 
-    changeMessage() {
+    changeMessage(name) {
+        console.log("ok");
         this.setState({
-            message: 'Welcome, Tishya'
+            message: 'Welcome, ' + name
         })
     }
 
@@ -37,15 +42,17 @@ export default class Content extends Component {
     }
 
     render() {
+        const {name, age, favouriteSport} = this.props;
+
         return (
             <React.Fragment>
              <h1 className="bd-title" id="content">{this.state.message}</h1>
-             <p className="bd-lead">{this.props.name}'s favorite sport is {this.props.favouriteSport}</p>
+             <p className="bd-lead">{age} favorite sport is {favouriteSport}</p>
 
-            <button onClick={() => this.changeMessage()}>Change message</button>
+            <Table functionName={this.changeMessage}></Table>
 
             <h2>Counter - {this.state.counter}</h2>
-            <button onClick={() => this.incrementCounter()}>Change message</button>
+            <button onClick={this.incrementCounter}>Increment</button>
          </React.Fragment>
         )
     }
