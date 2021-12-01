@@ -6,7 +6,7 @@ export default class Content extends Component {
     constructor() {
         super()
         this.state = {
-            isLoggedIn: true,
+            isLoggedIn: false,
             message: 'Welcome, Jay',
             counter: 0
         };
@@ -33,9 +33,11 @@ export default class Content extends Component {
         let message
 
         if(this.state.isLoggedIn) {
-            message = this.state.message
-        } else {
-            message = 'Welcome, Guest'
+            message = this.state.message;
+        } 
+        
+        else {
+            message = 'Welcome, Guest';
         }
         
         return (
@@ -46,7 +48,7 @@ export default class Content extends Component {
             <Table functionName={this.changeMessage}></Table>
 
             <h2>Counter - {this.state.counter}</h2>
-            <button onClick={() => this.incrementCounter()}>Increment</button>
+            <button onClick={() => this.incrementCounter()} >Increment</button>
          </React.Fragment>
         )
     }

@@ -6,6 +6,7 @@ import Content from './Content';
 import Sidebar from './Sidebar';
 
 function App() {
+
   
   return (
     <React.Fragment>
@@ -13,6 +14,9 @@ function App() {
       <div className="row">
         <div className="col-md-3">
           <Sidebar />
+        </div>
+        <div>
+        <h1> this is time  </h1> 
         </div>
         <div className="col-md-9">
 

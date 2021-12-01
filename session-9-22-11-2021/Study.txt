@@ -1,0 +1,10 @@
+Portal:
+	ReactDOM.createPortal(child, container)
+	in which two element include 
+	1. html element
+	2. Get Value
+
+Modal :
+	 one type of pop up element
+
+

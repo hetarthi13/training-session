@@ -16,9 +16,11 @@ function App() {
         </div>
         <div className="col-md-9">
 
-          <Content name='jay' age="30" favouriteSport='soccer' />
-
+         <Content name='hetarthi' age="30" favouriteSport='soccer' />
         </div>
+        <div>
+          <h1> hhiii</h1>
+          </div>
       </div>
     </React.Fragment>
   );

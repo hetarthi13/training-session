@@ -1,12 +1,35 @@
-import React from 'react'
+// import React, { Component, PureComponent } from 'react'
 
-function Content() {
-    return (
-        <React.Fragment>
-            <h1 class="bd-title" id="content">List group</h1>
-            <p class="bd-lead">List groups are a flexible and powerful component for displaying a series of content. Modify and extend them to support just about any content within.</p>
-        </React.Fragment>
-    )
-}
+// export default class Content extends PureComponent {
+//   constructor(){
+//     super()
+//     this.state={
+//       data:10
+//     }
 
-export default Content
+//   }
+
+//   render() {
+//     return (
+//        <div>
+//        <h1>pure component {this.state.data}</h1>
+//        <button onClick={()=>this.setState({data:10})}>update massage</button>
+//        </div>
+//     );
+//   }
+//     // constructor(){
+    //   super()
+    //   this.state={
+    //     heading: null
+    //   }
+    // }
+   
+    // render() {
+    //   return (
+    //   <h1>{this.state.heading}</h1>
+    //   );
+    // }
+
+
+
+

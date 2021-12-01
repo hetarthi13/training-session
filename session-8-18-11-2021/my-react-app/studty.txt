@@ -1,0 +1,32 @@
+---------react lifecycle---------------
+
+1. Mounting (componentDidMount()) :
+  These methods are called in the following order when an instance of a component is being created and inserted into the DOM:
+ 	 -Constructor()
+ 	 -Static getDerivedStateFromProps()
+ 	 -render()
+	 -componentDidMount()
+
+2. Updating (componentDidUpdate()) :
+    An update can be caused by changes to props or state. These methods are called in the following order when a component is being re-rendered:
+	-static getDerivedStateFromProps()
+	-shouldComponentUpdate()
+	-render()
+	-getSnapshotBeforeUpdate()
+	-componentDidUpdate()
+
+3. Unmounting (componentWillUnmount())
+    This method is called when a component is being removed from the DOM:
+	-componentWillUnmount()
+
+4. componentDidCatch() :
+    This lifecycle is invoked after an error has been thrown by a descendant component. It receives two parameters:
+	error - The error that was thrown.
+	info - An object with a componentStack key containing information about which component threw the error.
+
+5. PureComponent :
+    
+
+6.Ref method :
+
+
