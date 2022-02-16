@@ -11,7 +11,7 @@ export default function App() {
   };
 
   const addTodo = useCallback(() => {
-    setTodos((t) => [...t, "New Todo"]);
+    setTodos((t) => [...t, "add!! Todo"]);
   }, [todos]);
 
   return (

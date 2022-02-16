@@ -1,20 +1,44 @@
 import './App.css';
-import React  from 'react'
-import state from './state';
-import ParentComponent from './ParentComponent';
+import React, { useEffect } from 'react'
+import Counter1 from './Counter1';
+// import Form from './Form'
 
-export default class App extends React.Component {
-        render() {
-                return (
-                         <div className="App">
-                         <state />
-                         <ParentComponent />
-                         </div>
-                );
-        }
-        
+function App() {
+        // const [state, setstate] = useState(0);
 
+        useEffect(() => {
+                Document.title = "you click ${state}";
+        });
+
+        return (
+                <>
+                        <div>
+                                {/* <Form /> */}
+                                {/* count : {state}<br />
+
+                                <button onClick={() => setstate(state + 1)}>incremnt</button> */}
+                                <br />
+                                <Counter1 initialCount={0} />
+                        </div>
+                </>
+        )
 }
+export default App
+// import state from './state';
+// import ParentComponent from './ParentComponent';
+
+// export default class App extends React.Component {
+//         render() {
+//                 return (
+//                          <div className="App">
+//                          <state />
+//                          <ParentComponent />
+//                          </div>
+//                 );
+//         }
+
+
+// }
 
 // import ParentComponent from './ParentComponent';
 // import PureComponent from './PureComponent';
@@ -53,10 +77,10 @@ export default class App extends React.Component {
 // //            <div>
 // //               {this.state.error ? <h1>Error!!!</h1> : <Content />}
 // //           </div> 
-        
+
 // //       );
 // //   }
-  
+
 
 // }
 

@@ -11,7 +11,7 @@
 
 //             <button type="button" onClick={() => dispatch({ type: 'UserAge', Age: age })}>Submit</button>  
 //         </div>  
-//     )  
+//     )    
 // }  
 
 // export default UserAge 
