@@ -1,14 +1,25 @@
 import React, {Component} from 'react'
 import Table from './Table';
-import './Custom.css'
-import styles from './myStyle.module.css'
+
+// function Content(props) {
+
+
+
+//     return (
+//         <React.Fragment>
+//             <h1 class="bd-title" id="content">Hello, {props.name}, {props.age}</h1>
+//             <p class="bd-lead">{props.name}'s favorite sport is {props.favouriteSport}</p>
+
+//             {props.children}
+//         </React.Fragment>
+//     )
+// }
 
 export default class Content extends Component {
 
     constructor() {
         super()
         this.state = {
-            isLoggedIn: true,
             message: 'Welcome, Jay',
             counter: 0
         };
@@ -29,24 +40,14 @@ export default class Content extends Component {
             counter: prevState.counter + parseInt(props.age)
         }));
     }
-    
+
     render() {
         const {name, age, favouriteSport} = this.props;
-        let  message
-
-        if(this.state.isLoggedIn) {
-            message = this.state.message;
-        } else {
-            message = 'Welcome, Guest';
-        }
-
-        let pClass = this.props.isPrimary ? 'primary' : '';
-
 
         return (
             <React.Fragment>
-             <h1 className={`${pClass} font-xl`} id="content">{this.state.isLoggedIn ? this.state.message : ' wel come noon '}</h1>
-             <p className={styles.myClass}>My name is {name}. I am {age}. My favorite sport is {favouriteSport}</p>
+             <h1 className="bd-title" id="content">{this.state.message}</h1>
+             <p className="bd-lead">My name is {name}. I am {age}. My favorite sport is {favouriteSport}</p>
 
             <Table functionName={this.changeMessage}></Table>
 

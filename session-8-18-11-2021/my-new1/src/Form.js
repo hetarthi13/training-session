@@ -20,13 +20,14 @@ function Form() {
         <div>
 
         <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Input Area</label>
-  <input type="text" onChange={handleChange} value={user.name} class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" />
-</div>
-<div class="mb-3">
-  <label for="formGroupExampleInput2" class="form-label">Text Area</label>
-  <textarea type="text" class="form-control" onChange={handleTextAreaChange} value={user.description} id="formGroupExampleInput2" placeholder="Another input placeholder"></textarea>
-</div>
+            <label for="formGroupExampleInput" class="form-label">Input Area</label>
+            <input type="text" onChange={handleChange} value={user.name} class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" />
+        </div>
+
+        <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Text Area</label>
+            <textarea type="text" class="form-control" onChange={handleTextAreaChange} value={user.description} id="formGroupExampleInput2" placeholder="Another input placeholder"></textarea>
+        </div>
             
         </div>
     )

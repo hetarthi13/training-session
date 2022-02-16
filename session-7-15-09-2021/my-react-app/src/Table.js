@@ -14,7 +14,9 @@ function Table(props) {
     return (
         <div>
             <ul>
-                {names.map(obj => <li style={ListStyle} key={obj.id}>{obj.name}</li>)}
+                {names.map(obj => <li style={ListStyle} key={obj.id}>
+                {obj.id}--
+                {obj.name}</li>)}
             </ul>
             
         </div>

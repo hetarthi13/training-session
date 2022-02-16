@@ -21,19 +21,17 @@ export default class Form1 extends Component {
 
     render() {
         return (
-           
-               <div>
-
-<div class="mb-3">
-<label for="formGroupExampleInput" class="form-label">Input Area</label>
-<input type="text" onChange={this.onTextChange} value={this.state.name} class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" />
-</div>
-{this.state.name}
-<div class="mb-3">
-<label for="formGroupExampleInput2" class="form-label">Text Area</label>
-<textarea type="text" onChange={this.onAreaChange} value={this.state.name} class="form-control"   id="formGroupExampleInput2" placeholder="Another input placeholder"></textarea>
-</div>  
+           <div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Input Area</label>
+                <input type="text" onChange={this.onTextChange} value={this.state.name} class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder" />
             </div>
-                    )
+                {this.state.name}
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Text Area</label>
+                <textarea type="text" onChange={this.onAreaChange} value={this.state.name} class="form-control"   id="formGroupExampleInput2" placeholder="Another input placeholder"></textarea>
+            </div>  
+            </div>
+        )
     }
 }
